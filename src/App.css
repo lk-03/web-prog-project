@@ -1,6 +1,8 @@
 /* --- src/App.css --- */
 /* Mod 3: CSS Properties — full design system */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
 /* 1. Global OS Desktop Background */
 .desktop-bg {
   min-height: 100vh;
@@ -102,7 +104,7 @@
 .gradient-text {
   font-size: 3rem;
   font-weight: 900;
-  font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+  font-family: "Pixelify Sans","Comic Sans MS", "Chalkboard SE", sans-serif;
   background: linear-gradient(to right, #ff0000, #ffff00, #00aaff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
