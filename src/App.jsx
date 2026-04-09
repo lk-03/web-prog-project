@@ -29,12 +29,65 @@ const Home = () => (
   </WindowContainer>
 );
 
+const TEAM = [
+  {
+    name: 'Kowsic L',
+    role: 'Developer & Designer',
+    bio: 'Passionate about building retro-styled web experiences and pixel art tools using modern React.',
+    github: 'https://github.com/lk-03',
+    linkedin: 'https://www.linkedin.com/in/kowsic-l/',
+    avatar: '👾',
+  },
+  {
+    name: 'Caleb Kurian George',
+    role: 'Developer & Contributor',
+    bio: 'Loves crafting interactive UIs and bringing creative ideas to life through clean, structured code.',
+    github: 'https://github.com/calebkg123/',
+    linkedin: 'https://www.linkedin.com/in/caleb-kurian-george',
+    avatar: '🕹️',
+  },
+];
+
 const AboutUs = () => (
-  <WindowContainer title="About_Me.txt">
-    <div style={{ fontFamily: 'monospace', backgroundColor: 'white', padding: '1rem', border: '2px inset gray' }}>
-      <h2 style={{ fontWeight: 'bold', borderBottom: '2px solid black', marginBottom: '0.5rem' }}>WHO AM I?</h2>
-      <p>Just a cyber surfer riding the digital waves.</p>
-      <p>I built this site using React and standard CSS!</p>
+  <WindowContainer title="About_Us.txt">
+    {/* Project description */}
+    <div className="about-project border-inset">
+      <div className="about-project-label">&gt; README.md</div>
+      <p><strong>Mossaico</strong> is a retro-themed pixel art web application built with React 19 and Vite.</p>
+      <p>It features a pixel art canvas, a sticker board, an inspiration gallery, and curated tutorials — all wrapped in a classic Windows 95 aesthetic.</p>
+      <p>Built as a front-end development project using standard React, HTML5, and vanilla CSS — no external UI libraries.</p>
+    </div>
+
+    {/* Team cards */}
+    <div className="about-team">
+      {TEAM.map(member => (
+        <div key={member.name} className="about-card border-outset">
+          <div className="about-card-header border-inset">
+            <span className="about-avatar">{member.avatar}</span>
+            <div>
+              <div className="about-name">{member.name}</div>
+              <div className="about-role">{member.role}</div>
+            </div>
+          </div>
+          <p className="about-bio">{member.bio}</p>
+          <div className="about-links">
+            <a href={member.github} target="_blank" rel="noreferrer" className="border-outset about-link-btn">
+              🐙 GitHub
+            </a>
+            <a href={member.linkedin} target="_blank" rel="noreferrer" className="border-outset about-link-btn about-link-linkedin">
+              💼 LinkedIn
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Tech stack */}
+    <div className="about-stack border-inset">
+      <span className="about-stack-label">⚙️ BUILT WITH:</span>
+      {['React 19', 'Vite', 'Vanilla CSS', 'HTML5 Canvas API', 'localStorage'].map(tech => (
+        <span key={tech} className="border-outset about-tech-badge">{tech}</span>
+      ))}
     </div>
   </WindowContainer>
 );
@@ -182,8 +235,7 @@ export default function App() {
         </div>
 
         <div className="border-outset" style={{ textAlign: 'center', padding: '8px', marginTop: '2rem', fontSize: '0.75rem', fontFamily: 'monospace' }}>
-          <p>Created by CyberSurfer99 · Mossaico v2.0 · Styled with standard CSS.</p>
-          <p style={{ opacity: 0.7, marginTop: '4px' }}>Hosted on an Arch Linux server (btw).</p>
+          <p>Mossaico v2.0 · Built by Kowsic L &amp; Caleb Kurian George · React 19 + Vite</p>
         </div>
 
       </div>
