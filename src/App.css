@@ -103,7 +103,7 @@
 
 .gradient-text {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 300;
   font-family: "Pixelify Sans","Comic Sans MS", "Chalkboard SE", sans-serif;
   background: linear-gradient(to right, #ff0000, #ffff00, #00aaff);
   -webkit-background-clip: text;
