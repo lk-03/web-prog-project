@@ -94,7 +94,7 @@ const AboutUs = () => (
 
 // --- Sticker Board ---
 
-const PRESET_STICKERS = Array.from({ length: 16 }, (_, i) => `/stickers/sticker${i + 1}.jpg`);
+const PRESET_STICKERS = Array.from({ length: 16 }, (_, i) => `${import.meta.env.BASE_URL}stickers/sticker${i + 1}.jpg`);
 
 const StickerBoard = () => {
   const [placedStickers, setPlacedStickers] = useState([]);
