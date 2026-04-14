@@ -8,7 +8,6 @@ Mossaico combines a pixel art drawing tool, an inspiration gallery, a YouTube tu
 - 32×32 pixel drawing grid
 - Tools: Pen, Eraser, Flood Fill (BFS), Line (Bresenham's algorithm)
 - 16-color preset palette + custom color picker
-- Adjustable brush size (1–4px)
 - Export drawing as PNG download
 - Save drawing as a custom sticker to the Sticker Board
 
@@ -31,7 +30,7 @@ Mossaico combines a pixel art drawing tool, an inspiration gallery, a YouTube tu
 ### 👤 About & Home
 - Static pages styled as retro OS windows
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -67,7 +66,7 @@ mossaico/
 └── vite.config.js
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+
